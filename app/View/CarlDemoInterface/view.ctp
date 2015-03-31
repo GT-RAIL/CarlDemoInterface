@@ -72,13 +72,13 @@ echo $this->Rms->keyboardTeleop($environment['Teleop'][0]['topic'], $environment
 <script>
 	var armClient = new ROSLIB.ActionClient({
 		ros : _ROS,
-		serverName : 'carl_moveit_wrapper/common_actions/ready_arm',
-		actionName : 'wpi_jaco_msgs/HomeArmAction'
+		serverName : 'carl_moveit_wrapper/common_actions/arm_action',
+		actionName : 'carl_moveit/ArmAction'
 	});
 
 	var segmentClient = new ROSLIB.Service({
 		ros : _ROS,
-		name : '/rail_segmentation/segment_auto',
+		name : '/rail_segmentation/segment',
 		serviceType : 'std_srvs/Empty'
 	});
 
@@ -90,7 +90,7 @@ echo $this->Rms->keyboardTeleop($environment['Teleop'][0]['topic'], $environment
 		var goal = new ROSLIB.Goal({
 			actionClient : armClient,
 			goalMessage : {
-				retract : false
+				action : 0
 			}
 		});
 		goal.send();
@@ -99,15 +99,7 @@ echo $this->Rms->keyboardTeleop($environment['Teleop'][0]['topic'], $environment
 		var goal = new ROSLIB.Goal({
 			actionClient : armClient,
 			goalMessage : {
-				retract : true,
-				retractPosition : {
-					position : true,
-					armCommand : true,
-					fingerCommand : false,
-					repeat : false,
-					joints : [-2.57, 1.39, 0.527, -.084, .515, -1.745]
-				},
-				numAttempts : 3
+				action : 1
 			}
 		});
 		goal.send();
