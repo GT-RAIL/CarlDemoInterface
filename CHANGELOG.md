@@ -1,3 +1,6 @@
+2015-03-24 **0.0.7**
+ * Switched segment to new arm actions and segmentation [(rctoris)](https://github.com/rctoris/)
+
 2015-03-24 **0.0.6**
  * Switched segment to segment_auto service [(dekent)](https://github.com/dekent/)
  
