@@ -1,4 +1,4 @@
-CarlDemoInterface [![Build Status](https://api.travis-ci.org/WPI-RAIL/CarlDemoInterface.png)](https://travis-ci.org/WPI-RAIL/CarlDemoInterface)
+CarlDemoInterface [![Build Status](https://api.travis-ci.org/GT-RAIL/CarlDemoInterface.png)](https://travis-ci.org/GT-RAIL/CarlDemoInterface)
 =================
 
 #### Demo CARL Interface for the RMS
