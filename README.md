@@ -3,7 +3,7 @@ CarlDemoInterface [![Build Status](https://api.travis-ci.org/WPI-RAIL/CarlDemoIn
 
 #### Demo CARL Interface for the RMS
 
-This repository contains an interface for the [Robot Management System (RMS)](https://github.com/WPI-RAIL/rms).
+This repository contains an interface for the [Robot Management System (RMS)](http://wiki.ros.org/rms).
 
 This project is released as part of the [Robot Web Tools](http://robotwebtools.org/) effort.
 

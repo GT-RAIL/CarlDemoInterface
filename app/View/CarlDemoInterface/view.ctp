@@ -4,7 +4,7 @@
  *
  * The basic interface displays a camera feed and keyboard teleop.
  *
- * @author		Russell Toris - rctoris@wpi.edu
+ * @author		Russell Toris - russell.toris@gmail.com
  * @copyright	2014 Worcester Polytechnic Institute
  * @link		https://github.com/WPI-RAIL/CarlDemoInterface
  * @since		CarlDemoInterface v 0.0.1
